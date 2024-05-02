@@ -27,7 +27,7 @@ public class AppMainTabsPage {
         	//setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);  		
 		JFrame window = new JFrame("Basic ERP App"); 
         	window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        	window.setSize(256, 512);		
+        	window.setSize(512, 1024);		
 
 		try {
    			Font customFont = Font.createFont(Font.TRUETYPE_FONT, new File("rpgawesome-webfont.ttf")).deriveFont(8f);
