@@ -91,7 +91,11 @@ public class AppFrontPage extends JFrame implements ActionListener {
 		check(maxLAs);
        		if(loggedIn) {
 			dispose();
-        		AppMainTabsPage appMainTabsPage = new AppMainTabsPage(); 
+			try {
+	        		AppMainTabsPage appMainTabsPage = new AppMainTabsPage(); 
+			} catch(IOException ioe) {
+				ioe.printStackTrace();
+			}
         	} else {  
       			System.out.println("Please enter valid username and password");  
         	}
