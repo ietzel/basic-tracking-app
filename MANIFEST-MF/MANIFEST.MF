@@ -1,1 +1,1 @@
-Main-Class: erp.AppMain
+Main-Class: AppMain
