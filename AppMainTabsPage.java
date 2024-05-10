@@ -22,7 +22,9 @@ import javax.swing.JButton;
 import javax.swing.JFrame; 
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
 import javax.swing.JTabbedPane;
+import javax.swing.JTable;
 import javax.swing.JTextField;
 
 public class AppMainTabsPage {  
@@ -60,408 +62,140 @@ public class AppMainTabsPage {
  	       	JTabbedPane tabPanel = new JTabbedPane(); 
 	    
 
-		JPanel page1 = new JPanel(new GridLayout(36, 16));  
-
-		JButton InventorysaveAsButton = new JButton("save as");
-		InventorysaveAsButton.setBackground(new java.awt.Color(128, 0, 128));
-		InventorysaveAsButton.setForeground(new java.awt.Color(255, 255, 255));
-		page1.add(InventorysaveAsButton);
-	
-		JTextField InventorysaveAsTF = new JTextField("");
-		InventorysaveAsTF.setBackground(new java.awt.Color(128, 0, 128));
-		InventorysaveAsTF.setForeground(new java.awt.Color(255, 255, 255));
-		page1.add(InventorysaveAsTF);
-
-		JLabel InventoryLa = new JLabel("(");
-		InventoryLa.setOpaque(true);
-		InventoryLa.setBackground(new java.awt.Color(128, 0, 128));
-		InventoryLa.setForeground(new java.awt.Color(255, 255, 255));
-		page1.add(InventoryLa); 
-
-		JLabel InventoryLb = new JLabel("T");
-		InventoryLb.setOpaque(true);
-		InventoryLb.setBackground(new java.awt.Color(128, 0, 128));
-		InventoryLb.setForeground(new java.awt.Color(255, 255, 255));
-		page1.add(InventoryLb); 
-
-		JLabel InventoryLc = new JLabel("-");
-		InventoryLc.setOpaque(true);
-		InventoryLc.setBackground(new java.awt.Color(128, 0, 128));
-		InventoryLc.setForeground(new java.awt.Color(255, 255, 255));
-		page1.add(InventoryLc); 
-
-		JLabel InventoryLd = new JLabel("Shirt");
-		InventoryLd.setOpaque(true);
-		InventoryLd.setBackground(new java.awt.Color(128, 0, 128));
-		InventoryLd.setForeground(new java.awt.Color(255, 255, 255));
-		page1.add(InventoryLd); 
-
-		JLabel InventoryLe = new JLabel("Log");
-		InventoryLe.setOpaque(true);
-		InventoryLe.setBackground(new java.awt.Color(128, 0, 128));
-		InventoryLe.setForeground(new java.awt.Color(255, 255, 255));
-		page1.add(InventoryLe); 
-
-		JLabel InventoryLf = new JLabel(",");
-		InventoryLf.setOpaque(true);
-		InventoryLf.setBackground(new java.awt.Color(128, 0, 128));
-		InventoryLf.setForeground(new java.awt.Color(255, 255, 255));
-		page1.add(InventoryLf); 
-
-		JLabel InventoryLg = new JLabel("&");
-		InventoryLg.setOpaque(true);
-		InventoryLg.setBackground(new java.awt.Color(128, 0, 128));
-		InventoryLg.setForeground(new java.awt.Color(255, 255, 255));
-		page1.add(InventoryLg); 
-
-		JLabel InventoryLh = new JLabel("Work");
-		InventoryLh.setOpaque(true);
-		InventoryLh.setBackground(new java.awt.Color(128, 0, 128));
-		InventoryLh.setForeground(new java.awt.Color(255, 255, 255));
-		page1.add(InventoryLh); 
-
-		JLabel InventoryLi = new JLabel("Glove");
-		InventoryLi.setOpaque(true);
-		InventoryLi.setBackground(new java.awt.Color(128, 0, 128));
-		InventoryLi.setForeground(new java.awt.Color(255, 255, 255));
-		page1.add(InventoryLi); 
-
-		JLabel InventoryLj = new JLabel("Check");
-		InventoryLj.setOpaque(true);
-		InventoryLj.setBackground(new java.awt.Color(128, 0, 128));
-		InventoryLj.setForeground(new java.awt.Color(255, 255, 255));
-		page1.add(InventoryLj); 
-
-		JLabel InventoryLk = new JLabel("out");
-		InventoryLk.setOpaque(true);
-		InventoryLk.setBackground(new java.awt.Color(128, 0, 128));
-		InventoryLk.setForeground(new java.awt.Color(255, 255, 255));
-		page1.add(InventoryLk); 
-
-		JLabel InventoryLl = new JLabel(")");
-		InventoryLl.setOpaque(true);
-		InventoryLl.setBackground(new java.awt.Color(128, 0, 128));
-		InventoryLl.setForeground(new java.awt.Color(255, 255, 255));
-		page1.add(InventoryLl); 
+		JPanel page1 = new JPanel();  
 
 		page1.add(wIconAA);
 
 		page1.add(wIconAB);
 
-		JLabel InventoryLA = new JLabel("Client");
-		InventoryLA.setOpaque(true);
-		InventoryLA.setBackground(new java.awt.Color(128, 0, 128));
-		InventoryLA.setForeground(new java.awt.Color(255, 255, 255));
-		page1.add(InventoryLA);
-		JLabel InventoryLB = new JLabel("Item");
-		InventoryLB.setOpaque(true);
-		InventoryLB.setBackground(new java.awt.Color(128, 0, 128));
-		InventoryLB.setForeground(new java.awt.Color(255, 255, 255));
-		page1.add(InventoryLB); 
-		JLabel InventoryLC = new JLabel("Style");
-		InventoryLC.setOpaque(true);
-		InventoryLC.setBackground(new java.awt.Color(128, 0, 128));
-		InventoryLC.setForeground(new java.awt.Color(255, 255, 255));
-		page1.add(InventoryLC); 
-		JLabel InventoryLD = new JLabel("S");
-		InventoryLD.setOpaque(true);
-		InventoryLD.setBackground(new java.awt.Color(128, 0, 128));
-		InventoryLD.setForeground(new java.awt.Color(255, 255, 255));
-		page1.add(InventoryLD);
-		JLabel InventoryLE = new JLabel("M");
-		InventoryLE.setOpaque(true);
-		InventoryLE.setBackground(new java.awt.Color(128, 0, 128));
-		InventoryLE.setForeground(new java.awt.Color(255, 255, 255));
-		page1.add(InventoryLE); 
-		JLabel InventoryLF = new JLabel("L");
-		InventoryLF.setOpaque(true);
-		InventoryLF.setBackground(new java.awt.Color(128, 0, 128));
-		InventoryLF.setForeground(new java.awt.Color(255, 255, 255));
-		page1.add(InventoryLF);
-		JLabel InventoryLG = new JLabel("XL");
-		InventoryLG.setOpaque(true);
-		InventoryLG.setBackground(new java.awt.Color(128, 0, 128));
-		InventoryLG.setForeground(new java.awt.Color(255, 255, 255));
-		page1.add(InventoryLG); 
-		JLabel InventoryLH = new JLabel("XXL");
-		InventoryLH.setOpaque(true);
-		InventoryLH.setBackground(new java.awt.Color(128, 0, 128));
-		InventoryLH.setForeground(new java.awt.Color(255, 255, 255));
-		page1.add(InventoryLH);
-		JLabel InventoryLI = new JLabel("1X");
-		InventoryLI.setOpaque(true);
-		InventoryLI.setBackground(new java.awt.Color(128, 0, 128));
-		InventoryLI.setForeground(new java.awt.Color(255, 255, 255));
-		page1.add(InventoryLI); 
-		JLabel InventoryLJ = new JLabel("2X");
-		InventoryLJ.setOpaque(true);
-		InventoryLJ.setBackground(new java.awt.Color(128, 0, 128));
-		InventoryLJ.setForeground(new java.awt.Color(255, 255, 255));
-		page1.add(InventoryLJ);
-		JLabel InventoryLK = new JLabel("3X");
-		InventoryLK.setOpaque(true);
-		InventoryLK.setBackground(new java.awt.Color(128, 0, 128));
-		InventoryLK.setForeground(new java.awt.Color(255, 255, 255));
-		page1.add(InventoryLK); 
-		JLabel InventoryLL = new JLabel("No Size");
-		InventoryLL.setOpaque(true);
-		InventoryLL.setBackground(new java.awt.Color(128, 0, 128));
-		InventoryLL.setForeground(new java.awt.Color(255, 255, 255));
-		page1.add(InventoryLL); 
-		JLabel InventoryLM = new JLabel("Date");
-		InventoryLM.setOpaque(true);
-		InventoryLM.setBackground(new java.awt.Color(128, 0, 128));
-		InventoryLM.setForeground(new java.awt.Color(255, 255, 255));
-		page1.add(InventoryLM); 
-		JLabel InventoryLN = new JLabel("Staff Initials");
-		InventoryLN.setOpaque(true);
-		InventoryLN.setBackground(new java.awt.Color(128, 0, 128));
-		InventoryLN.setForeground(new java.awt.Color(255, 255, 255));
-		page1.add(InventoryLN); 
-		JLabel InventoryLO = new JLabel("Paid");
-		InventoryLO.setOpaque(true);
-		InventoryLO.setBackground(new java.awt.Color(128, 0, 128));
-		InventoryLO.setForeground(new java.awt.Color(255, 255, 255));
-		page1.add(InventoryLO); 
-		JLabel InventoryLP = new JLabel("Notes");
-		InventoryLP.setOpaque(true);
-		InventoryLP.setBackground(new java.awt.Color(128, 0, 128));
-		InventoryLP.setForeground(new java.awt.Color(255, 255, 255));
-		page1.add(InventoryLP); 
+		String[][] data = new String[][]{
+            		{ 
+				"1", "", "Vest", "", "", "", "", "", "", "", "1", "", "", "", "", "", "L.L Beans"
+			},
+            		{ 
+				"2", "", "Jacket", "", "", "", "1", "2", "", "", "", "", "", "", "", "", "Port Authority"
+			},
+			{ 
+				"3", "", "Buttons up long sleeve", "", "", "", "", "1", "", "", "", "", "", "", "", "", "Red House"
+			},
+            		{ 
+				"4", "", "Zip up hoodie", "", "", "4", "13", "10", "", "", "6", "2", "", "", "", "", "Port & company"
+			},
+			{ 
+				"5", "", "Winter jacket", "", "", "1", "", "", "", "", "1", "", "", "", "", "", "L.L Beans"
+			},
+            		{ 
+				"6", "", "Button up T-shirt", "", "", "", "", "1", "", "", "1", "", "", "", "", "", "Joesusa.com"
+			},
+			{ 
+				"7", "", "Bowling shirts", "", "", "", "", "", "", "", "", "1", "", "", "", "", ""
+			},
+            		{ 
+				"8", "", "Patches", "", "", "", "", "", "", "", "", "", "100 pcs", "", "", "", ""
+			},
+			{ 
+				"9", "", "Blankets", "", "", "", "", "", "", "", "", "", "17", "", "", "", ""
+			},
+			{ 
+				"10", "", "Coolers", "", "", "", "", "", "", "", "", "", "9", "", "", "", ""
+			},
+            		{ 
+				"11", "", "T-shirts", "", "5", "14", "16", "22", "", "", "17", "10", "", "", "", "", ""
+			},
+			{ 
+				"12", "", "Gloves", "", "15", "18", "8", "10", "", "", "", "", "", "", "", "", ""
+			},
+            		{ 
+				"13", "", "Long sleeve shirt", "", "", "6", "13", "13", "", "", "7", "", "", "", "", "", "Port & company"
+			},
+			{ 
+				"14", "", "Lanyards", "", "", "", "", "", "", "", "", "", "238pcs", "", "", "", ""
+			},
+            		{ 
+				"15", "", "Tie backpacks", "", "", "", "", "", "", "", "", "", "33", "", "", "", ""
+			},
+			{ 
+				"16", "", "Polo shirt", "", "", "", "", "1", "", "", "", "", "", "", "", "", "core365"
+			},
+            		{ 
+				"17", "", "V neck shirt", "", "", "", "1", "", "", "", "", "", "", "", "", "", "bella.canvas"
+			},
+			{ 
+				"18", "", "Purple client shirts", "", "17", "14", "6", "14", "", "", "11", "6", "", "", "", "", "Port & company"
+			},
+			{ 
+				"19", "", "Name tags", "", "", "", "", "", "", "", "", "", "215pcs", "", "", "", ""
+			},
+            		{ 
+				"20", "", "hands santizer ", "", "", "", "", "", "", "", "", "", "135pcs", "", "", "", ""
+			},
+			{ 
+				"21", "", "Baseball caps", "", "", "", "", "", "", "", "", "", "17", "", "", "", ""
+			},
+            		{ 
+				"22", "", "Beanies", "", "", "", "", "", "", "", "", "", "8", "", "", "", ""
+			},
+			{ 
+				"23", "", "Computer bags", "", "", "", "", "", "", "", "", "", "2", "", "", "", ""
+			},
+            		{ 
+				"24", "", "backpacks", "", "", "", "", "", "", "", "", "", "23", "", "", "", ""
+			},
+			{ 
+				"25", "", "Puffle bags", "", "", "", "", "", "", "", "", "", "28", "", "", "", ""
+			},
+            		{ 
+				"26", "", "Vehicle joggers", "", "", "1", "1", "4", "1", "", "", "1", "", "", "", "", ""
+			},
+			{ 
+				"27", "", "Vehicle t-shirts", "", "", "4", "6", "3", "", "", "", "2", "", "", "", "", ""
+			},
+			{ 
+				"28", "", "Straws", "", "", "", "", "", "", "", "", "", "61", "", "", "", ""
+			},
+            		{ 
+				"29", "", "Mugs", "", "", "", "", "", "", "", "", "", "11", "", "", "", ""
+			},
+			{ 
+				"30", "", "Water bottles", "", "", "", "", "", "", "", "", "", "3", "", "", "", ""
+			},
+            		{ 
+				"31", "", "Sunglasses", "", "", "", "", "", "", "", "", "", "20", "", "", "", ""
+			},
+			{ 
+				"32", "", "Golf markers", "", "", "", "", "", "", "", "", "", "22", "", "", "", ""
+			},
+            		{ 
+				"33", "", "Grey sweatershirt", "", "2", "", "6", "3", "", "", "3", "1", "", "", "", "", ""
+			},
+			{ 
+				"34", "", "Socks", "", "", "", "", "", "", "", "", "", "90", "", "", "", ""
+			},
+            		{ 
+				"35", "", "Clear zipper bags", "", "", "", "", "", "", "", "", "", "152", "", "", "", ""
+			},
+			{ 
+				"36", "", "Sanitizer pens", "", "", "", "", "", "", "", "", "", "375", "", "", "", ""
+			}
+        	};
+ 
+		for(int i = 0; i < data.length; i++) {
+			int sum = 0;
+			for(int j = 4; j < 12; j++) {
+				sum += data[i][j].toInt();
+			}	
+			data[i][16] = sum.toString();	
+		}
 
-		JTextField InventoryTF = new JTextField("Vest");
-		/*JTextField InventoryTF1_0 = new JTextField("Vest");
-		JTextField InventoryTF9_0 = new JTextField("1");
-		JTextField InventoryTF15_0 = new JTextField("L.L. Beans");
-		JTextField InventoryTF1_1 = new JTextField("Jacket");
-		JTextField InventoryTF5_1 = new JTextField("1");
-		JTextField InventoryTF6_1 = new JTextField("2");
-		JTextField InventoryTF15_1 = new JTextField("Port Authority");
-		JTextField InventoryTF1_2 = new JTextField("Buttons up long sleeve");
-		JTextField InventoryTF6_2 = new JTextField("1");
-		JTextField InventoryTF15_2 = new JTextField("Red House");
-		JTextField InventoryTF1_3 = new JTextField("Zip up hoodie");
-		JTextField InventoryTF4_3 = new JTextField("4");
-		JTextField InventoryTF5_3 = new JTextField("13");
-		JTextField InventoryTF6_3 = new JTextField("10");
-		JTextField InventoryTF9_3 = new JTextField("6");
-		JTextField InventoryTF10_3 = new JTextField("2");
-		JTextField InventoryTF15_3 = new JTextField("Port & company");
-		JTextField InventoryTF1_4 = new JTextField("Winter jacket");
-		JTextField InventoryTF4_4 = new JTextField("1");
-		JTextField InventoryTF9_4 = new JTextField("1");
-		JTextField InventoryTF15_4 = new JTextField("L. L. Beans");
-		JTextField InventoryTF1_5 = new JTextField("Button up T-Shirt");
-		JTextField InventoryTF6_5 = new JTextField("1");
-		JTextField InventoryTF9_5 = new JTextField("1");
-		JTextField InventoryTF15_5 = new JTextField("Joeusa.com");
-		JTextField InventoryTF1_6 = new JTextField("Bowling Shirts");
-		JTextField InventoryTF10_6 = new JTextField("1");
-		JTextField InventoryTF1_7 = new JTextField("Patches");
-		JTextField InventoryTF11_7 = new JTextField("100 pcs");
-		JTextField InventoryTF1_8 = new JTextField("Blankets");
-		JTextField InventoryTF11_8 = new JTextField("17");
-		JTextField InventoryTF1_9 = new JTextField("Coolers");
-		JTextField InventoryTF11_9 = new JTextField("9");
-		JTextField InventoryTF1_10 = new JTextField("T-Shirts");
-		JTextField InventoryTF3_10 = new JTextField("5");
-		JTextField InventoryTF4_10 = new JTextField("14");
-		JTextField InventoryTF5_10 = new JTextField("16");
-		JTextField InventoryTF6_10 = new JTextField("22");
-		JTextField InventoryTF8_10 = new JTextField("17");
-		JTextField InventoryTF9_10 = new JTextField("10");
-		JTextField InventoryTF1_11 = new JTextField("Gloves");
-		JTextField InventoryTF3_11 = new JTextField("15");
-		JTextField InventoryTF4_11 = new JTextField("18");
-		JTextField InventoryTF5_11 = new JTextField("8");
-		JTextField InventoryTF6_11 = new JTextField("10");
-		JTextField InventoryTF1_12 = new JTextField("Long sleeve shirt");
-		JTextField InventoryTF4_12 = new JTextField("6");
-		JTextField InventoryTF5_12 = new JTextField("13");
-		JTextField InventoryTF6_12 = new JTextField("13");
-		JTextField InventoryTF9_12 = new JTextField("7");
-		JTextField InventoryTF15_12 = new JTextField("Port & Company");
-		JTextField InventoryTF1_13 = new JTextField("Lanyards");
-		JTextField InventoryTF11_13 = new JTextField("238pcs");
-		JTextField InventoryTF1_14 = new JTextField("Tie Backpacks");
-		JTextField InventoryTF11_14 = new JTextField("33");
-		JTextField InventoryTF1_15 = new JTextField("Polo Shirt");
-		JTextField InventoryTF6_15 = new JTextField("1");
-		JTextField InventoryTF15_15 = new JTextField("core365");
-		JTextField InventoryTF1_16 = new JTextField("V neck shirt");
-		JTextField InventoryTF5_16 = new JTextField("1");
-		JTextField InventoryTF15_16 = new JTextField("bella.canvas");
-		JTextField InventoryTF1_17 = new JTextField("Purple client shirts");
-		JTextField InventoryTF3_17 = new JTextField("17");
-		JTextField InventoryTF4_17 = new JTextField("14");
-		JTextField InventoryTF5_17 = new JTextField("6");
-		JTextField InventoryTF6_17 = new JTextField("14");
-		JTextField InventoryTF9_17 = new JTextField("11");
-		JTextField InventoryTF10_17 = new JTextField("6");
-		JTextField InventoryTF15_17 = new JTextField("Port & company");
-		JTextField InventoryTF1_18 = new JTextField("Name tags");
-		JTextField InventoryTF11_18 = new JTextField("215pcs");
-		JTextField InventoryTF1_19 = new JTextField("hands sanitizer");
-		JTextField InventoryTF11_19 = new JTextField("135pcs");
-		JTextField InventoryTF1_20 = new JTextField("Baseball caps");
-		JTextField InventoryTF11_20 = new JTextField("17");
-		JTextField InventoryTF1_21 = new JTextField("Beanies");
-		JTextField InventoryTF11_21 = new JTextField("8");
-		JTextField InventoryTF1_22 = new JTextField("Computer bags");
-		JTextField InventoryTF11_22 = new JTextField("2");
-		JTextField InventoryTF1_23 = new JTextField("backpacks");
-		JTextField InventoryTF11_23 = new JTextField("23");
-		JTextField InventoryTF1_24 = new JTextField("Puffle bags");
-		JTextField InventoryTF11_24 = new JTextField("28");
-		JTextField InventoryTF1_25 = new JTextField("Vehicle joggers");
-		JTextField InventoryTF4_25 = new JTextField("1");
-		JTextField InventoryTF5_25 = new JTextField("1");
-		JTextField InventoryTF6_25 = new JTextField("4");
-		JTextField InventoryTF7_25 = new JTextField("1");
-		JTextField InventoryTF10_25 = new JTextField("1");
-		JTextField InventoryTF1_26 = new JTextField("Vehicle t-shirts");
-		JTextField InventoryTF4_26 = new JTextField("4");
-		JTextField InventoryTF5_26 = new JTextField("6");
-		JTextField InventoryTF6_26 = new JTextField("3");
-		JTextField InventoryTF10_26 = new JTextField("2");
-		JTextField InventoryTF1_27 = new JTextField("Straws");
-		JTextField InventoryTF11_27 = new JTextField("61");
-		JTextField InventoryTF1_28 = new JTextField("Mugs");
-		JTextField InventoryTF11_28 = new JTextField("11");
-		JTextField InventoryTF1_29 = new JTextField("Water bottles");
-		JTextField InventoryTF11_29 = new JTextField("3");
-		JTextField InventoryTF1_30 = new JTextField("Sunglasses");
-		JTextField InventoryTF11_30 = new JTextField("20");
-		JTextField InventoryTF1_31 = new JTextField("Golf Markers");
-		JTextField InventoryTF11_31 = new JTextField("22");
-		JTextField InventoryTF1_32 = new JTextField("Grey sweatershirt");
-		JTextField InventoryTF3_32 = new JTextField("2");
-		JTextField InventoryTF5_32 = new JTextField("6");
-		JTextField InventoryTF6_32 = new JTextField("3");
-		JTextField InventoryTF9_32 = new JTextField("3");
-		JTextField InventoryTF10_32 = new JTextField("1");
-		JTextField InventoryTF1_33 = new JTextField("Socks");
-		JTextField InventoryTF11_33 = new JTextField("90");
-		JTextField InventoryTF1_34 = new JTextField("Clear zipper bags");
-		JTextField InventoryTF11_34 = new JTextField("152");
-		JTextField InventoryTF1_35 = new JTextField("Sanitizer Pens");
-		JTextField InventoryTF11_35 = new JTextField("375");
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);
-		page1.add(InventoryTF);*/
+        	String[] columnNames = { 
+			"#", "Client", "Item", "Style", "S", "M", "L", "XL", "XXL", "1X", "2X", "3X", "No Size", "Date", "Staff Init.", "Paid", "Notes", "Sum"
+		};
+ 
+        	JTable j = new JTable(data, columnNames);
+        	j.setBounds(0, 0, 640, 1024);
+ 
+        	JScrollPane sp = new JScrollPane(j);
+        	page1.add(sp);
 
         	JPanel page2 = new JPanel(new GridLayout(24, 3));  
 
