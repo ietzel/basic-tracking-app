@@ -36,10 +36,8 @@ public class AppMainTabsPage {
 		BufferedImage wPic = ImageIO.read(this.getClass().getResource("logo.png"));
 		JLabel wIcon = new JLabel(new ImageIcon(wPic));
 
-		BufferedImage wPicA = ImageIO.read(this.getClass().getResource("logoA.png"));
-		JLabel wIconAA = new JLabel(new ImageIcon(wPicA));
-		BufferedImage wPicB = ImageIO.read(this.getClass().getResource("logoB.png"));
-		JLabel wIconAB = new JLabel(new ImageIcon(wPicB));
+		BufferedImage wPic2 = ImageIO.read(this.getClass().getResource("logo.png"));
+		JLabel wIcon2 = new JLabel(new ImageIcon(wPic2));
 
 		BufferedImage wPicE = ImageIO.read(this.getClass().getResource("logoA.png"));
 		JLabel wIconCA = new JLabel(new ImageIcon(wPicE));
@@ -67,9 +65,7 @@ public class AppMainTabsPage {
 
 		JPanel page1 = new JPanel(new BorderLayout(1, 2));  
 
-		page1.add(wIconAA);
-
-		page1.add(wIconAB);
+		page1.add(wIcon2, BorderLayout.NORTH);
 
 		String[][] data = new String[][]{
             		{ 
@@ -197,12 +193,16 @@ public class AppMainTabsPage {
 		};
  		
         	JTable j = new JTable(data, columnNames);
-
-        	j.setBounds(0, 0, 640, 512);
  		
+		for(int i = 0; i < columnNames.length; i++) {
+			j.getColumnModel().getColumn(i).setPreferredWidth(11);
+		}
+		j.getColumnModel().getColumn(2).setPreferredWidth(128);
+		j.getColumnModel().getColumn(16).setPreferredWidth(91);
+
 		j.setGridColor(new java.awt.Color(128, 0, 128));
         	JScrollPane sp = new JScrollPane(j);
-        	page1.add(sp);
+        	page1.add(sp, BorderLayout.CENTER);
 
 		
         	JPanel page2 = new JPanel(new GridLayout(24, 3));  
