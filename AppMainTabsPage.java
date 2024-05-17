@@ -1,3 +1,4 @@
+import java.awt.BorderLayout;
 import java.awt.Color;  
 import java.awt.event.*;
 import java.awt.FontFormatException;
@@ -26,6 +27,8 @@ import javax.swing.JScrollPane;
 import javax.swing.JTabbedPane;
 import javax.swing.JTable;
 import javax.swing.JTextField;
+import javax.swing.table.TableColumn;
+import javax.swing.table.TableColumnModel;
 
 public class AppMainTabsPage {  
 	public AppMainTabsPage() throws IOException {
@@ -62,7 +65,7 @@ public class AppMainTabsPage {
  	       	JTabbedPane tabPanel = new JTabbedPane(); 
 	    
 
-		JPanel page1 = new JPanel();  
+		JPanel page1 = new JPanel(new BorderLayout(1, 2));  
 
 		page1.add(wIconAA);
 
@@ -91,7 +94,7 @@ public class AppMainTabsPage {
 				"7", "", "Bowling shirts", "", "", "", "", "", "", "", "", "1", "", "", "", "", "", ""
 			},
             		{ 
-				"8", "", "Patches", "", "", "", "", "", "", "", "", "", "100 pcs", "", "", "", "", ""
+				"8", "", "Patches", "", "", "", "", "", "", "", "", "", "100", "", "", "", "", ""
 			},
 			{ 
 				"9", "", "Blankets", "", "", "", "", "", "", "", "", "", "17", "", "", "", "", ""
@@ -109,7 +112,7 @@ public class AppMainTabsPage {
 				"13", "", "Long sleeve shirt", "", "", "6", "13", "13", "", "", "7", "", "", "", "", "", "Port & company", ""
 			},
 			{ 
-				"14", "", "Lanyards", "", "", "", "", "", "", "", "", "", "238pcs", "", "", "", "", ""
+				"14", "", "Lanyards", "", "", "", "", "", "", "", "", "", "238", "", "", "", "", ""
 			},
             		{ 
 				"15", "", "Tie backpacks", "", "", "", "", "", "", "", "", "", "33", "", "", "", "", ""
@@ -124,10 +127,10 @@ public class AppMainTabsPage {
 				"18", "", "Purple client shirts", "", "17", "14", "6", "14", "", "", "11", "6", "", "", "", "", "Port & company", ""
 			},
 			{ 
-				"19", "", "Name tags", "", "", "", "", "", "", "", "", "", "215pcs", "", "", "", "", ""
+				"19", "", "Name tags", "", "", "", "", "", "", "", "", "", "215", "", "", "", "", ""
 			},
             		{ 
-				"20", "", "hands santizer ", "", "", "", "", "", "", "", "", "", "135pcs", "", "", "", "", ""
+				"20", "", "hands santizer ", "", "", "", "", "", "", "", "", "", "135", "", "", "", "", ""
 			},
 			{ 
 				"21", "", "Baseball caps", "", "", "", "", "", "", "", "", "", "17", "", "", "", "", ""
@@ -181,8 +184,10 @@ public class AppMainTabsPage {
 		
 		for(int i = 0; i < data.length; i++) {
 			int sum = 0;
-			for(int j = 4; j < 12; j++) {
-				sum += Integer.parseInt(data[i][j]);
+			for(int j = 4; j < 13; j++) {
+				if(data[i][j] != "") {
+					sum += Integer.parseInt(data[i][j]);
+				}
 			}	
 			data[i][17] = Integer.toString(sum);	
 		}
@@ -192,10 +197,13 @@ public class AppMainTabsPage {
 		};
  		
         	JTable j = new JTable(data, columnNames);
-        	j.setBounds(0, 0, 1024, 1024);
- 
+
+        	j.setBounds(0, 0, 640, 512);
+ 		
+		j.setGridColor(new java.awt.Color(128, 0, 128));
         	JScrollPane sp = new JScrollPane(j);
         	page1.add(sp);
+
 		
         	JPanel page2 = new JPanel(new GridLayout(24, 3));  
 
@@ -506,13 +514,13 @@ public class AppMainTabsPage {
 		PayrollsaveAsTF.setForeground(new java.awt.Color(255, 255, 255));
 		page3.add(PayrollsaveAsTF);
 
-		JLabel PayrollLa = new JLabel("(T-Shirt Log, &");
+		JLabel PayrollLa = new JLabel("");
 		PayrollLa.setOpaque(true);
 		PayrollLa.setBackground(new java.awt.Color(128, 0, 128));
 		PayrollLa.setForeground(new java.awt.Color(255, 255, 255));
 		page3.add(PayrollLa); 
 
-		JLabel PayrollLb = new JLabel("Work Glove Checkout)");
+		JLabel PayrollLb = new JLabel("");
 		PayrollLb.setOpaque(true);
 		PayrollLb.setBackground(new java.awt.Color(128, 0, 128));
 		PayrollLb.setForeground(new java.awt.Color(255, 255, 255));
