@@ -71,7 +71,7 @@ public class AppFrontPage extends JFrame implements ActionListener {
         	add(newPanel, BorderLayout.CENTER);  
 
         	b1.addActionListener(this);
-        	setTitle("Basic ERP App");
+        	setTitle("Basic Tracking App");
 
 		try {
    			Font customFont = Font.createFont(Font.TRUETYPE_FONT, new File("rpgawesome-webfont.ttf")).deriveFont(8f);
